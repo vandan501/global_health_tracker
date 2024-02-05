@@ -1,6 +1,74 @@
-*{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+/* navigation section */
+header nav {
+  width: 100%;
+  margin: 0;
+  height: min-content;
+}
+.main_logo {
+  width: 12rem;
+  height: 7rem;
+  filter: drop-shadow(10px 10px 15px rgb(109, 109, 109));
+}
+ul {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+ul li {
+  text-decoration: none;
+  display: inline;
+}
+ul li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+ul li a:hover{
+    color: #60b341;
+    transform: scale(1.2);
+    /* font-size: 18px; */
+    /* transition: all 0.3s ease-in-out; */
+}
+
+
+.login-btn {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  height: 15%;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(63, 210, 63);
+}
+.login-btn:hover{
+    background-color: beige;
+    color: green;
+    font-weight: 500;
+    transition: 0.3s all ease-in;
+}
+/* end of navigation section */
+
+/* *********************************************************************** */
+
+
+
+
+/* hero section */
+
+
+/* end of hero section */
