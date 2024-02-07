@@ -105,8 +105,7 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px; */
   width: 100%;
   height: min-content;
   background-color: black;
@@ -155,7 +154,7 @@ ul li a:hover {
   text-align: justify;
   padding: 15px;
   font-weight: 300;
-  text-decoration-color: aqua;
+  box-shadow: 1px 5px 1px 1px black;
   background-color: white;
   font-size: 18px;
   border-radius: 5%;
