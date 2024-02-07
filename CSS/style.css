@@ -3,9 +3,13 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* navigation section */
+header {
+  width: 100%;
+}
 header nav {
   width: 100%;
   background-color: antiquewhite;
@@ -128,7 +132,7 @@ ul li a:hover {
   display: flex;
 }
 .about-us-container2 {
-  width: 95.5%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,6 +169,9 @@ ul li a:hover {
 /* footer started */
 footer {
   display: flex;
+  width: 100%;
+  bottom: 0px;
+  position: relative;
   justify-content: space-around;
   align-items: center;
   background-color: antiquewhite;
@@ -315,6 +322,7 @@ footer {
     scale: 1.1;
   }
   /* end of nav bar */
+
   /* about us */
   .about-us-container1 .about-us-heading {
     font-size: 1.5rem;
@@ -323,7 +331,7 @@ footer {
     font-size: 14px;
   }
   .about-us-container2 {
-    width: 88%;
+    width: 100%;
   }
   .about-us-container2 .about-us-heading {
     font-size: 2rem;
