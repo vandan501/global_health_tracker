@@ -126,7 +126,6 @@ ul li a:hover {
   text-align: center;
   line-height: 25px;
   display: flex;
-
 }
 .about-us-container2 {
   width: 95.5%;
@@ -140,14 +139,14 @@ ul li a:hover {
   height: min-content;
   padding: 30px;
 }
-.about-us-container2 .about-us-heading{
+.about-us-container2 .about-us-heading {
   color: black;
   font-size: 45px;
   padding: 20px;
-  width: 300px;  
+  width: 300px;
 }
 
-.about-us-container2 .about-us-p{
+.about-us-container2 .about-us-p {
   color: black;
   text-align: justify;
   padding: 15px;
@@ -162,9 +161,6 @@ ul li a:hover {
   margin: 50px 50px 50px 50px;
 }
 /* end of about us section */
-
-
-
 
 /* responsive design for navigation bar */
 @media (max-width: 1224px) {
@@ -250,31 +246,24 @@ ul li a:hover {
   }
   /* end of nav bar */
   /* about us */
-  .about-us-container1 .about-us-heading{
+  .about-us-container1 .about-us-heading {
     font-size: 1.5rem;
   }
-  .about-us-container1 .about-us-p{
+  .about-us-container1 .about-us-p {
     font-size: 14px;
   }
-  .about-us-container2{
- 
-    width: 89%;
+  .about-us-container2 {
+    width: 88%;
   }
-  .about-us-container2 .about-us-heading{
+  .about-us-container2 .about-us-heading {
     font-size: 2rem;
   }
-  .about-us-container2 .about-us-p{
+  .about-us-container2 .about-us-p {
     font-size: 14px;
     line-height: 30px;
   }
   /* end of about us */
-  
-
-
 }
-
-
-
 
 /* end of responsive design for navigation bar */
 
