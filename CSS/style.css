@@ -162,10 +162,80 @@ ul li a:hover {
 }
 /* end of about us section */
 
+/* footer started */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 50px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+.footer-1 img {
+  width: 150px;
+  height: 100px;
+}
+.footer-2 {
+  display: flex;
+
+  /* padding: 20px; */
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.footer-2 ul {
+  display: flex;
+  line-height: 25px;
+  padding: 10px;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+}
+.footer-2 ul li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+}
+.footer-2 ul li a:hover {
+  color: red;
+  transition: none;
+  scale: 0.9;
+}
+.footer-3 {
+  display: flex;
+
+  width: 300px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-3 ul li a i {
+  font-size: 25px;
+}
+.footer-3 ul li a i:hover {
+  color: red;
+}
+
+/* end of footer */
+
 /* responsive design for navigation bar */
 @media (max-width: 1224px) {
   /* start of nav bar */
-  ul li {
+  nav ul li {
     display: none;
   }
   header {
