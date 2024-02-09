@@ -204,7 +204,7 @@ ul li a:hover {
   flex-direction: column;
   gap: 10px;
 }
- .hero-section-heading h1 {
+.hero-section-heading h1 {
   font-size: 3rem;
   color: cadetblue;
   position: relative;
@@ -257,11 +257,7 @@ ul li a:hover {
   -o-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 1;
-
-
 }
-
-
 
 .img-card .card-text {
   padding: 0 15px 15px;
@@ -323,38 +319,35 @@ ul li a:hover {
   background: #ff9800;
 }
 
-.hero-section-3{
+.hero-section-3 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: min-content;
-  /* gap: 30px; */
   flex-direction: column;
 }
-.hero-section-3 .sec3-heading{
+.hero-section-3 .sec3-heading {
   display: flex;
   padding: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
-.sec3-heading h2{
+.sec3-heading h2 {
   text-align: center;
   color: black;
   margin: 10px;
   font-size: 2rem;
 }
-.sec3-heading p{
+.sec3-heading p {
   font-size: 18px;
   width: 60%;
   font-weight: 400;
   text-align: center;
   color: darkmagenta;
-
 }
-.event-cards{
+.event-cards {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -363,34 +356,34 @@ ul li a:hover {
   margin: 20px;
   padding: 20px;
   justify-content: center;
-
 }
-.event-card{
+.event-card {
   border-radius: 50px;
   width: 350px;
   position: relative;
+  flex-shrink: inherit;
   margin: 30px;
   height: min-content;
   background-color: whitesmoke;
   padding: 0px 30px 30px 30px;
   display: flex;
-  box-shadow: 1px 1px 10px black;
+  box-shadow: none;
   justify-content: center;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   flex-direction: column;
 }
-.event-card:hover{
-  box-shadow: none;
+.event-card:hover {
+  box-shadow: 1px 1px 10px black;
 }
-.event-card .event-img{
+.event-card .event-img {
   width: 350px;
   height: 250px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
-.event-card .event-date{
+.event-card .event-date {
   background-color: green;
   color: white;
   position: relative;
@@ -401,26 +394,26 @@ ul li a:hover {
   border-radius: 5px;
   border-top-left-radius: 30px;
 }
-.event-card .event-heading{
+.event-card .event-heading {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.event-card .event-description{
+.event-card .event-description {
   color: black;
 }
-.event-card .event-learn-more{
+.event-card .event-learn-more {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
   color: white;
   border: none;
 }
-.event-card .event-learn-more:hover{
+.event-card .event-learn-more:hover {
   background-color: gray;
   color: black;
 }
-.event-card .event-learn-more a{
+.event-card .event-learn-more a {
   color: white;
   text-decoration: none;
 }
@@ -441,7 +434,6 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* padding-top: 30px; */
   width: 100%;
   height: min-content;
   background-color: black;
@@ -468,12 +460,13 @@ ul li a:hover {
 }
 .about-us-container2 {
   width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  background-color: aliceblue;
+  background-color: white;
   gap: 0;
   height: min-content;
   padding: 30px;
@@ -490,7 +483,7 @@ ul li a:hover {
   text-align: justify;
   padding: 15px;
   font-weight: 300;
-  box-shadow: 1px 5px 1px 1px black;
+  box-shadow: 1px 2px 10px 3px black;
   background-color: white;
   font-size: 18px;
   border-radius: 5%;
