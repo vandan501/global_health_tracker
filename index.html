@@ -72,6 +72,16 @@
         <li><a href="./contact.html">Contact</a></li>
         <li><button class="login-btn">Login</button></li>
       </div>
+
+      <div class="full-secreen-video">
+        <video
+          src="./videos/istockphoto-482636245-640_adpp_is.mp4"
+          autoplay
+          muted
+          loop
+          class="hero-sec-video"
+        ></video>
+      </div>
     </header>
     <!-- End of Header section -->
 
@@ -247,6 +257,27 @@
     </section>
     <!-- end of hero section -->
 
+    <!-- News letters section -->
+    <section class="news-letters-section">
+      <div class="newsletter-container">
+        <div class="newsletter-title">Subscribe for Updates and News</div>
+        <form id="newsletter-form" onsubmit="return subscribe()">
+          <input
+            type="email"
+            class="input-email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="subscribe-button">Subscribe Now</button>
+        </form>
+        <p class="privacy-message">
+          Your privacy is important to us. We will never share your email
+          address.
+        </p>
+      </div>
+    </section>
+    <!-- end of News letters section -->
     <!-- footer section -->
     <footer class="footer-section">
       <div class="footer-1">
@@ -290,6 +321,7 @@
     </footer>
     <!-- end of footer section -->
 
+    <!-- NEWS -->
     <!-- Javascript file for DOM manipulation and other tasks -->
     <script src="./JS/script.js"></script>
   </body>

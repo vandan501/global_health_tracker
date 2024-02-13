@@ -12,3 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownMenu.classList.toggle('open');
   });
 });
+
+
+
+
+function subscribe() {
+  // Add your backend integration logic here (e.g., store email in database)
+  alert("Thank you for subscribing! You will receive our updates shortly.");
+  return false; // Prevent form submission for this example
+}
