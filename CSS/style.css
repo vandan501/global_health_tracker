@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#small-screen-bg-img{
+#small-screen-bg-img {
   display: none;
 }
 .blog-home2 {
@@ -971,7 +971,7 @@ footer {
   .hero-sec-video {
     display: none;
   }
-  #small-screen-bg-img{
+  #small-screen-bg-img {
     display: block;
     width: 100%;
     height: min-content;
@@ -982,6 +982,42 @@ footer {
   .news-letters-section {
     margin-bottom: 10%;
   }
+
+  /* text animation at home page */
+  #container {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 80pt;
+    top: 15%;
+    align-self: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #text1,
+  #text2 {
+    position: absolute;
+    height: min-content;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 40pt;
+    color: white;
+    text-align: center;
+    user-select: none;
+    filter: url(#threshold) blur(0.6px);
+    background: -webkit-linear-gradient(
+      orange,
+      rgb(188, 12, 241),
+      rgb(212, 4, 4)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 }
 
 /* end of responsive design for navigation bar */
