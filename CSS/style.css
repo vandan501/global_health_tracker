@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+#small-screen-bg-img{
+  display: none;
+}
 .blog-home2 {
   font-family: "Montserrat", sans-serif;
   color: #8d97ad;
@@ -881,12 +883,12 @@ footer {
     justify-content: center;
     color: white;
   }
-  #three-line-icon{
-color: white;
-  }
-  .three-line-icon{
+  #three-line-icon {
     color: white;
-      }
+  }
+  .three-line-icon {
+    color: white;
+  }
   .dropdown_menu.open {
     height: 80vh;
     transition: all 0.5s ease-in-out;
@@ -964,14 +966,20 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
   }
   .hero-sec-video {
-    width: 100%;
-    position: relative;
+    display: none;
   }
+  #small-screen-bg-img{
+    display: block;
+    width: 100%;
+    height: min-content;
 
+    background-color: #0c2d57;
+  }
   /* news letter section bottom margin changed */
-  .news-letters-section{
+  .news-letters-section {
     margin-bottom: 10%;
   }
 }

@@ -30,40 +30,41 @@
     ></script>
     <!-- text animation css -->
     <style>
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-#container {
-    position: absolute;
-    margin: auto;
-    width: 80%;
-    height: 80pt;
-top: 15%;
-align-self: center;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
+      #container {
+        position: absolute;
+        margin: auto;
+        width: 80%;
+        height: 80pt;
+        top: 15%;
+        align-self: center;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+      }
 
-}
-
-#text1,
-#text2 {
-    position: absolute;
-    height: min-content;
-    width: 100%;
-    display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-size: 80pt;
-  color: white;
-    text-align: center;
-    user-select: none;
-    filter: url(#threshold) blur(0.6px);
-      background: -webkit-linear-gradient(orange,rgb(188, 12, 241), rgb(212, 4, 4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-
+      #text1,
+      #text2 {
+        position: absolute;
+        height: min-content;
+        width: 100%;
+        display: inline-block;
+        font-family: "Raleway", sans-serif;
+        font-size: 80pt;
+        color: white;
+        text-align: center;
+        user-select: none;
+        filter: url(#threshold) blur(0.6px);
+        background: -webkit-linear-gradient(
+          orange,
+          rgb(188, 12, 241),
+          rgb(212, 4, 4)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     </style>
   </head>
   <body>
@@ -111,29 +112,33 @@ align-self: center;
       </div>
 
       <div class="full-secreen-video">
+        <img src="./Images/small-screen-img.jpg" alt="" id="small-screen-bg-img">
         <video
           src="./videos/1475082_people_business_3840x2160.mp4"
           autoplay
           muted
           loop
           class="hero-sec-video"
-        >
-      </video>
-      <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
-    </div>
-    
-    <svg id="filters">
-        <defs>
+        ></video>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+
+        <svg id="filters">
+          <defs>
             <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+              <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
                       0 1 0 0 0
                       0 0 1 0 0
-                      0 0 0 255 -140" />
+                      0 0 0 255 -140"
+              />
             </filter>
-        </defs>
-    </svg>
+          </defs>
+        </svg>
       </div>
     </header>
     <!-- End of Header section -->
