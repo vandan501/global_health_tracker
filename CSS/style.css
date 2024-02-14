@@ -2,6 +2,42 @@
 #small-screen-bg-img {
   display: none;
 }
+/* text animation of large screen */
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+#container {
+  position: absolute;
+  margin: auto;
+  width: 80%;
+  height: 80pt;
+  top: 15%;
+  align-self: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  height: min-content;
+  width: 100%;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 80pt;
+  color: white;
+  text-align: center;
+  user-select: none;
+  filter: url(#threshold) blur(0.6px);
+  background: -webkit-linear-gradient(
+    orange,
+    rgb(188, 12, 241),
+    rgb(212, 4, 4)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .blog-home2 {
   font-family: "Montserrat", sans-serif;
   color: #8d97ad;
