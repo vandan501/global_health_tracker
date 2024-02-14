@@ -156,12 +156,14 @@ ul li a:hover {
   font-weight: 400;
   color: white;
   cursor: pointer;
+
   border: 1px solid white;
   background-color: transparent;
 }
 .login-btn:hover {
   background-color: white;
   color: black;
+  background-color: orange;
   /* font-weight: 500; */
   /* transition: 0.3s all ease-in; */
 }
@@ -971,6 +973,7 @@ footer {
     align-self: center;
     width: 300px;
     height: min-content;
+    
     text-align: center;
   }
   /* end of nav bar */
