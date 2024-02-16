@@ -18,10 +18,7 @@ async function fetchData() {
   
       const CountryDetails = document.querySelector(".stat-section");
       const CountryMapSection = document.querySelector(".country-map-section");
-  
-      // Display latitude and longitude information
-      const latitude = data[0].latlng[0];
-      const longitude = data[0].latlng[1];
+
   
       CountryDetails.innerHTML = `
         <marquee behavior="alternate" direction="">

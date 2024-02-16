@@ -157,3 +157,11 @@ a{
   border: 1px solid red;
 }
 /* end of statistics page css */
+
+
+@media (max-width: 1284px) {
+  .country-img{
+    width: 200px;
+    height: 150px;
+  }
+}
