@@ -9,6 +9,7 @@ fetch("https://restcountries.com/v3.1/all")
 
       const countryCard = document.createElement("a");
       countryCard.classList.add("countryCard");
+      countryCard.href=`/Country/Country.html?name=${country.name.common}`;
 
       countryCard.innerHTML =` <img src="${country.flags.svg}" alt="Country-flag-image" class="country-image-card">
       <div class="card-text">
