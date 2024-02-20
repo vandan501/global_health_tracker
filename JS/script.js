@@ -15,6 +15,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function validateForm() {
+  var usernameInput = document.getElementById("a_email");
+  var passwordInput = document.getElementById("a_password");
+
+  // Get values from inputs
+  var username = usernameInput.value.trim();
+  var password = passwordInput.value.trim();
+
+  // Check if the provided username and password match the expected values
+  if (username === "vandan.raval@learniphi.com" && password === "vandan@1234") {
+    alert("Login successful!");
+    window.location.href = "../adminDashboard.html";
+  } else {
+    alert("Invalid username or password. Please try again.");
+  }
+}
+
+function openAdminLogin() {
+    window.open('./admin_login.html', '_blank'); // '_blank' opens the link in a new tab
+  }
+
+
 
 function subscribe() {
   // Add your backend integration logic here (e.g., store email in database)
@@ -112,3 +134,12 @@ function animate() {
 }
 
 animate();
+
+
+
+
+function eventDetails()
+{
+  
+  alert("Your Event Booked Successfully");
+}

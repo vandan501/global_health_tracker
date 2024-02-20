@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Total Participants</title>
+    <!-- Title image  -->
+    <link
+      rel="shortcut icon"
+      href="./Images/main_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+      }
+
+      .admin-panel {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        background-color: #0c2d57;
+        color: #fff;
+        padding-top: 20px;
+      }
+
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .header {
+        background-color: #0c2d57;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #666;
+      }
+
+      .nav-link:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .main-content {
+        width: 80%;
+        left: 20%;
+        position: absolute;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+      }
+      .logo {
+        width: 80%;
+        height: 100px;
+        cursor: pointer;
+      }
+      input {
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        height: 30px;
+      }
+      textarea {
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+      }
+      h3 {
+        margin-top: 50px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        cellpadding: 10px;
+        cellspacing: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-panel">
+      <div class="sidebar">
+        <div class="header">
+          <a href="./adminDashboard.html">
+            <img src="./Images/final logo.png" class="logo" alt=""
+          /></a>
+        </div>
+        <a href="./adminDashboard.html" class="nav-link">Dashboard</a>
+        <a href="./AddEvents.html" class="nav-link">Add Events</a>
+        <a href="./Addnews.html" class="nav-link">Add News</a>
+        <a href="./TotalParticipants.html" class="nav-link"
+          >Total Participants</a
+        >
+        <a href="./ContactResponse.html" class="nav-link">Contact Response </a>
+        <a href="./index.html" class="nav-link" >Go to Website</a>
+
+        <a href="./index.html" class="nav-link">Logout</a>
+      </div>
+
+      <div class="content">
+        <div class="header">
+          Welcome { user } to Global Health Tracker Admin Panel
+        </div>
+        <div class="main-content">
+          <h2>Total Participants List</h2>
+          <table border="1">
+            <tr>
+              <th>Sr. No</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact Number</th>
+              <th>Age</th>
+              <th>Country</th>
+              <th>Profession</th>
+              <th>Blood Group</th>
+              <th>Attended Events</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john.doe@example.com</td>
+              <td>123-456-7890</td>
+              <td>30</td>
+              <td>USA</td>
+              <td>Software Engineer</td>
+              <td>A+</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane Smith</td>
+              <td>jane.smith@example.com</td>
+              <td>987-654-3210</td>
+              <td>25</td>
+              <td>Canada</td>
+              <td>Graphic Designer</td>
+              <td>O-</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Bob Johnson</td>
+              <td>bob.johnson@example.com</td>
+              <td>555-123-4567</td>
+              <td>45</td>
+              <td>UK</td>
+              <td>Doctor</td>
+              <td>B+</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Alice Williams</td>
+              <td>alice.williams@example.com</td>
+              <td>111-222-3333</td>
+              <td>28</td>
+              <td>Australia</td>
+              <td>Teacher</td>
+              <td>AB-</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mike Brown</td>
+              <td>mike.brown@example.com</td>
+              <td>444-555-6666</td>
+              <td>35</td>
+              <td>Germany</td>
+              <td>Engineer</td>
+              <td>O+</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Sarah Davis</td>
+              <td>sarah.davis@example.com</td>
+              <td>777-888-9999</td>
+              <td>32</td>
+              <td>France</td>
+              <td>Artist</td>
+              <td>A-</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Chris Miller</td>
+              <td>chris.miller@example.com</td>
+              <td>222-333-4444</td>
+              <td>40</td>
+              <td>Spain</td>
+              <td>Lawyer</td>
+              <td>AB+</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Emily Taylor</td>
+              <td>emily.taylor@example.com</td>
+              <td>666-777-8888</td>
+              <td>29</td>
+              <td>Italy</td>
+              <td>Journalist</td>
+              <td>B-</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>David Moore</td>
+              <td>david.moore@example.com</td>
+              <td>999-111-2222</td>
+              <td>38</td>
+              <td>Japan</td>
+              <td>Chef</td>
+              <td>AB-</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Lisa Johnson</td>
+              <td>lisa.johnson@example.com</td>
+              <td>333-444-5555</td>
+              <td>31</td>
+              <td>Brazil</td>
+              <td>Architect</td>
+              <td>O-</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

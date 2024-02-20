@@ -29,7 +29,87 @@
       crossorigin="anonymous"
     ></script>
     <!-- text animation css -->
-    <style></style>
+    <style>
+      button {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 3rem;
+      }
+
+      /* Popup styles */
+      #overlay {
+        /* display: none; */
+        position: fixed;
+        position: relative;
+        left: 5%;
+        width: 50%;
+        bottom: 150%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      #overlay.active {
+        bottom: 160%;
+        visibility: visible;
+        opacity: 1;
+        cursor: pointer;
+        transition: 0.5s;
+        filter: blur(0px);
+      }
+
+      .popup {
+        width: 100%;
+        position: absolute;
+        bottom: 150%;
+        background-color: #ffffff;
+        padding: 20px;
+        transition: all ease-in-out 3s;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Form styles */
+      form {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section -->
@@ -59,7 +139,9 @@
           <li><a href="./news.html">News</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li><button class="login-btn">Login</button></li>
+          <li>
+            <button class="login-btn" onclick="openAdminLogin()">Login</button>
+          </li>
         </ul>
         <ul class="toggle_btn">
           <i class="fa-solid fa-bars-staggered" id="three-line-icon"></i>
@@ -217,7 +299,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-section-3">
+      <div class="hero-section-3" id="blur">
         <div class="sec3-heading">
           <h2>Health Awareness Events</h2>
           <p>
@@ -226,6 +308,7 @@
             knowledge in the field of global health.
           </p>
         </div>
+
         <div class="event-cards">
           <div class="event-card">
             <img src="./Images/expert.jpg" alt="experts" class="event-img" />
@@ -239,7 +322,7 @@
               significance of regular exercise in maintaining a healthy heart.
             </p>
             <div class="event-learn-more">
-              <a href="">Lern More</a>
+              <a href="#" onclick="toggle()">Book Slot</a>
             </div>
           </div>
 
@@ -259,7 +342,7 @@
               practical workshop on mindfulness and stress reduction.
             </p>
             <div class="event-learn-more">
-              <a href="">Lern More</a>
+              <a href="#" onclick="toggle()">Book Slot</a>
             </div>
           </div>
 
@@ -275,8 +358,38 @@
               importance of a balanced diet in preventing chronic diseases.
             </p>
             <div class="event-learn-more">
-              <a href="">Lern More</a>
+              <a href="#" onclick="toggle()">Book Slot</a>
             </div>
+          </div>
+        </div>
+        <div id="overlay" class="overlay" onclick="">
+          <div id="popup" class="popup">
+            <form onsubmit="eventDetails()">
+              <span class="close" onclick="toggle()">&times;</span>
+
+              <label for="name" autofocus>Name:</label>
+              <input type="text" id="name" name="name" required autofocus autocomplete="off" oninput="handleInput(event)" onkeydown="handleKeydown(event)" onclick="handleClick(event)" />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="contact">Contact Number:</label>
+              <input type="tel" id="contact" name="contact" required />
+
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" required />
+
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="country" required />
+
+              <label for="profession">Profession:</label>
+              <input type="text" id="profession" name="profession" required />
+
+              <label for="bloodGroup">Blood Group:</label>
+              <input type="text" id="bloodGroup" name="bloodGroup" required />
+
+              <input type="submit" onclick=""/>
+            </form>
           </div>
         </div>
       </div>
@@ -350,5 +463,29 @@
     <!-- NEWS -->
     <!-- Javascript file for DOM manipulation and other tasks -->
     <script src="./JS/script.js"></script>
+
+    <script type="text/javascript">
+function toggle() {
+  event.preventDefault();
+  document.querySelector('input[type="text"]').focus();
+  var blur = document.getElementById("blur");
+  blur.classList.toggle("active");
+
+  var overlay = document.getElementById("overlay");
+  var isOverlayActive = overlay.classList.toggle("active");
+
+  // Focus on the first input field when the overlay is becoming active
+  if (isOverlayActive) {
+    var nameInput = document.getElementById("name");
+    if (nameInput) {
+      nameInput.focus();
+      console.log("Focused on input:", nameInput);
+    } else {
+      console.error("Input with id 'name' not found");
+    }
+  }
+}
+
+    </script>
   </body>
 </html>

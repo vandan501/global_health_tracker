@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Responses</title>
+    <!-- Title image  -->
+    <link
+      rel="shortcut icon"
+      href="./Images/main_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+      }
+
+      .admin-panel {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        width: 250px;
+        position: fixed;
+        height: 100%;
+        background-color: #0c2d57;
+        color: #fff;
+        padding-top: 20px;
+      }
+
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .header {
+        background-color: #0c2d57;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #666;
+      }
+
+      .nav-link:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .main-content {
+        width: 80%;
+        left: 20%;
+        position: absolute;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+      }
+      .logo {
+        width: 80%;
+        height: 100px;
+        cursor: pointer;
+      }
+      input {
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        height: 30px;
+      }
+      textarea {
+        margin-top: 50px;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+      }
+      h3 {
+        margin-top: 50px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        cellpadding: 10px;
+        cellspacing: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin-panel">
+      <div class="sidebar">
+        <div class="header">
+          <a href="./adminDashboard.html">
+            <img src="./Images/final logo.png" class="logo" alt=""
+          /></a>
+        </div>
+        <a href="./adminDashboard.html" class="nav-link">Dashboard</a>
+        <a href="./AddEvents.html" class="nav-link">Add Events</a>
+        <a href="./Addnews.html" class="nav-link">Add News</a>
+        <a href="./TotalParticipants.html" class="nav-link"
+          >Total Participants</a
+        >
+        <a href="./ContactResponse.html" class="nav-link">Contact Response </a>
+        <a href="./index.html" class="nav-link" >Go to Website</a>
+
+        <a href="./index.html" class="nav-link">Logout</a>
+      </div>
+
+      <div class="content">
+        <div class="header">
+          Welcome { user } to Global Health Tracker Admin Panel
+        </div>
+        <div class="main-content">
+          <h2>Contact Responses</h2>
+          <table border="1">
+            <tr>
+              <th>Sr. No</th>
+              <th>Email</th>
+              <th>Subject</th>
+              <th>Message</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="mailto:john.doe@example.com"> john.doe@example.com</a>
+              </td>
+              <td>Data Sync Issue</td>
+              <td>
+                Hello, I am experiencing issues with syncing my health data. Can
+                you please look into it?
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <a href="mailto:jane.smith@example.com">
+                  jane.smith@example.com</a
+                >
+              </td>
+              <td>Feature Request</td>
+              <td>
+                Hi, I would like to suggest a new feature for tracking sleep
+                patterns. It would be great if you could consider adding it.
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <a href="mailto:bob.johnson@example.com"
+                  >bob.johnson@example.com</a
+                >
+              </td>
+              <td>Feedback</td>
+              <td>
+                Dear team, I love the Global Health Tracker app! It has been
+                instrumental in helping me maintain a healthier lifestyle. Thank
+                you!
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="">alice.williams@example.com</a></td>
+              <td>Bug Report</td>
+              <td>
+                Hey, there seems to be a bug in the calorie tracking feature.
+                The app is not calculating the calories correctly. Please
+                investigate.
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><a href=""> mike.brown@example.com</a></td>
+              <td>Account Access Issue</td>
+              <td>
+                Hi support, I can't seem to log in to my account. Is there a
+                problem with the server or my credentials?
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><a href=""> sarah.davis@example.com</a></td>
+              <td>App Crashing</td>
+              <td>
+                Hello, the app keeps crashing whenever I try to input my
+                exercise data. Can you please fix this issue?
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><a href="">chris.miller@example.com</a></td>
+              <td>Localization Request</td>
+              <td>
+                Hi team, I would love to see the app available in Spanish. Are
+                there plans for localization in the future?
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><a href="">emily.taylor@example.com</a></td>
+              <td>Account Deactivation</td>
+              <td>
+                Dear support, I would like to deactivate my account. Please
+                guide me through the process. Thank you.
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><a href="">david.moore@example.com</a></td>
+              <td>Feature Enhancement</td>
+              <td>
+                Hi, the app is great, but it would be even better if we could
+                track water intake. Can you consider adding a water tracking
+                feature?
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><a href="">lisa.johnson@example.com </a></td>
+              <td>Positive Feedback</td>
+              <td>
+                Hey team, just wanted to say I love the user interface of the
+                app. It's user-friendly and visually appealing. Keep up the good
+                work!
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -524,7 +524,6 @@ border: 1px solid black;
 }
 .about-us-container2 {
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -966,6 +965,90 @@ footer {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+
+
+
+  button {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+  /* Popup styles */
+
+  #overlay {
+    
+    position: relative;
+    left: 1%;
+    width: 80%;
+    bottom: 1300px;
+    height: 100%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: 3s;
+    transition: all ease 3s;
+
+  }
+  #overlay.active {
+    position: relative;
+    bottom: 500px;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease 1s;
+    filter: blur(0px);
+
+  }
+    .popup {
+    width: 100%;
+    position: relative;
+    bottom: 150%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* Form styles */
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
 
