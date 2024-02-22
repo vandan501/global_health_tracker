@@ -5,6 +5,26 @@
 /* text animation of large screen */
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
+/* animation for home page sections */
+.hero-section,
+.hero-section-1,
+.hero-section-2,
+.hero-section-3,
+.news-letters-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.4s ease;
+}
+
+.hero-section.in-view,
+        .hero-section-1.in-view,
+        .hero-section-2.in-view,
+        .hero-section-3.in-view,
+        .news-letters-section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
 #container {
   position: absolute;
   margin: auto;
@@ -464,13 +484,12 @@ ul li a:hover {
 }
 .event-card .event-description {
   color: black;
-
 }
 .event-card .event-learn-more {
   padding: 10px;
   border-radius: 10px;
   color: white;
-border: 1px solid black;
+  border: 1px solid black;
   /* border: none; */
 }
 .event-card .event-learn-more:hover {
@@ -636,8 +655,6 @@ footer {
 }
 
 /* end of footer */
-
-
 
 /* news section */
 .news-section-container {
@@ -967,9 +984,6 @@ footer {
     -webkit-text-fill-color: transparent;
   }
 
-
-
-
   button {
     background-color: #4caf50;
     color: #ffffff;
@@ -980,17 +994,16 @@ footer {
   }
 
   .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 3rem;
-}
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+  }
 
   /* Popup styles */
 
   #overlay {
-    
     position: relative;
     left: 1%;
     width: 80%;
@@ -1002,7 +1015,6 @@ footer {
     cursor: pointer;
     transition: 3s;
     transition: all ease 3s;
-
   }
   #overlay.active {
     position: relative;
@@ -1012,9 +1024,8 @@ footer {
     cursor: pointer;
     transition: all ease 1s;
     filter: blur(0px);
-
   }
-    .popup {
+  .popup {
     width: 100%;
     position: relative;
     bottom: 150%;

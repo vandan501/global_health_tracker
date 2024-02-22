@@ -28,6 +28,23 @@
       src="https://kit.fontawesome.com/267448ee0a.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .hero-section-2 {
+        animation: news-cards-load 1s ease-in-out;
+        opacity: 1;
+      }
+      @keyframes news-cards-load {
+        0% {
+          transform: translateY(-50%);
+        }
+        50% {
+          transform: translateY(20%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
 
   <body>

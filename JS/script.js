@@ -143,3 +143,34 @@ function eventDetails()
   
   alert("Your Event Booked Successfully");
 }
+
+
+// for home page animation
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+      addInViewClass('.hero-section');
+      addInViewClass('.hero-section-1');
+      addInViewClass('.hero-section-2');
+      addInViewClass('.hero-section-3');
+      addInViewClass('.news-letters-section');
+  });
+});
+
+function addInViewClass(selector) {
+  var elements = document.querySelectorAll(selector);
+
+  elements.forEach(function(element) {
+      var position = element.getBoundingClientRect();
+
+      // Adjust the "100" based on when you want the animation to start
+      if (position.top < window.innerHeight - 100 && position.bottom >= 0) {
+          element.classList.add('in-view');
+      } else {
+          element.classList.remove('in-view');
+      }
+  });
+}
+
+
+
+

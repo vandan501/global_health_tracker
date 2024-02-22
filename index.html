@@ -368,7 +368,17 @@
               <span class="close" onclick="toggle()">&times;</span>
 
               <label for="name" autofocus>Name:</label>
-              <input type="text" id="name" name="name" required autofocus autocomplete="off" oninput="handleInput(event)" onkeydown="handleKeydown(event)" onclick="handleClick(event)" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autofocus
+                autocomplete="off"
+                oninput="handleInput(event)"
+                onkeydown="handleKeydown(event)"
+                onclick="handleClick(event)"
+              />
 
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required />
@@ -388,7 +398,7 @@
               <label for="bloodGroup">Blood Group:</label>
               <input type="text" id="bloodGroup" name="bloodGroup" required />
 
-              <input type="submit" onclick=""/>
+              <input type="submit" onclick="" />
             </form>
           </div>
         </div>
@@ -459,33 +469,30 @@
       </div>
     </footer>
     <!-- end of footer section -->
-
-    <!-- NEWS -->
     <!-- Javascript file for DOM manipulation and other tasks -->
     <script src="./JS/script.js"></script>
 
     <script type="text/javascript">
-function toggle() {
-  event.preventDefault();
-  document.querySelector('input[type="text"]').focus();
-  var blur = document.getElementById("blur");
-  blur.classList.toggle("active");
+      function toggle() {
+        event.preventDefault();
+        document.querySelector('input[type="text"]').focus();
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
 
-  var overlay = document.getElementById("overlay");
-  var isOverlayActive = overlay.classList.toggle("active");
+        var overlay = document.getElementById("overlay");
+        var isOverlayActive = overlay.classList.toggle("active");
 
-  // Focus on the first input field when the overlay is becoming active
-  if (isOverlayActive) {
-    var nameInput = document.getElementById("name");
-    if (nameInput) {
-      nameInput.focus();
-      console.log("Focused on input:", nameInput);
-    } else {
-      console.error("Input with id 'name' not found");
-    }
-  }
-}
-
+        // Focus on the first input field when the overlay is becoming active
+        if (isOverlayActive) {
+          var nameInput = document.getElementById("name");
+          if (nameInput) {
+            nameInput.focus();
+            console.log("Focused on input:", nameInput);
+          } else {
+            console.error("Input with id 'name' not found");
+          }
+        }
+      }
     </script>
   </body>
 </html>
