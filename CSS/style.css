@@ -572,7 +572,11 @@ ul li a:hover {
   width: 600px;
   line-height: 40px;
   flex-shrink: 1;
+  cursor: pointer;
   margin: 50px 50px 50px 50px;
+}
+.about-us-container2 .about-us-p:hover{
+  box-shadow: none;
 }
 /* end of about us section */
 /* ************************************************** */
