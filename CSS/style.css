@@ -588,9 +588,10 @@ ul li a:hover {
 }
 .about-us-container1 .about-us-p {
   margin-top: 50px;
-  color: whitesmoke;
+  color: white;
   margin-right: 20%;
   font-weight: 100;
+  font-size: 18px;
   margin-left: 20%;
   text-align: center;
   line-height: 25px;
@@ -620,8 +621,8 @@ ul li a:hover {
   text-align: justify;
   padding: 15px;
   font-weight: 300;
-  box-shadow: 1px 2px 10px 3px black;
   background-color: white;
+  box-shadow: 0px 0px 1px #2c3e50;
   font-size: 18px;
   border-radius: 5%;
   width: 600px;
@@ -630,8 +631,8 @@ ul li a:hover {
   cursor: pointer;
   margin: 50px 50px 50px 50px;
 }
-.about-us-container2 .about-us-p:hover {
-  box-shadow: none;
+svg{
+  border: none;
 }
 /* end of about us section */
 /* ************************************************** */
