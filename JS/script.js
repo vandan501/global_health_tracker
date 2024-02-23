@@ -142,17 +142,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function addInViewClass(selector) {
-  var elements = document.querySelectorAll(selector);
-
-  elements.forEach(function (element) {
-    var position = element.getBoundingClientRect();
-
-    // Adjust the "100" based on when you want the animation to start
-    if (position.top < window.innerHeight - 70 && position.bottom >= 50) {
-      element.classList.add("in-view");
-    } else {
-      element.classList.remove("in-view");
-    }
-  });
-}

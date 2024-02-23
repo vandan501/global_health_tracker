@@ -5,26 +5,6 @@
 /* text animation of large screen */
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
-/* animation for home page sections */
-.hero-section,
-.hero-section-1,
-.hero-section-2,
-.hero-section-3,
-.news-letters-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.5s ease, transform 0.4s ease;
-}
-
-.hero-section.in-view,
-.hero-section-1.in-view,
-.hero-section-2.in-view,
-.hero-section-3.in-view,
-.news-letters-section.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 #container {
   position: absolute;
   margin: auto;
