@@ -17,13 +17,13 @@
 }
 
 .hero-section.in-view,
-        .hero-section-1.in-view,
-        .hero-section-2.in-view,
-        .hero-section-3.in-view,
-        .news-letters-section.in-view {
-            opacity: 1;
-            transform: translateY(0);
-        }
+.hero-section-1.in-view,
+.hero-section-2.in-view,
+.hero-section-3.in-view,
+.news-letters-section.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 #container {
   position: absolute;
@@ -62,7 +62,7 @@
 .close {
   position: relative;
   bottom: 2%;
-right: -95%;
+  right: -95%;
   cursor: pointer;
   font-size: 3rem;
 }
@@ -131,7 +131,6 @@ input[type="submit"] {
 }
 /* end of pop up of event slot */
 
-
 .blog-home2 {
   font-family: "Montserrat", sans-serif;
   color: #8d97ad;
@@ -181,7 +180,7 @@ header nav {
     transform: translateY(0);
   }
 }
-#filters{
+#filters {
   display: none;
 }
 .main_logo {
@@ -647,7 +646,7 @@ ul li a:hover {
   cursor: pointer;
   margin: 50px 50px 50px 50px;
 }
-.about-us-container2 .about-us-p:hover{
+.about-us-container2 .about-us-p:hover {
   box-shadow: none;
 }
 /* end of about us section */

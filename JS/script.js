@@ -1,19 +1,16 @@
 // For small screen menu open and close code
 
-
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.querySelector('.toggle_btn');
-  const dropdownMenu = document.querySelector('.dropdown_menu');
+  const toggleBtn = document.querySelector(".toggle_btn");
+  const dropdownMenu = document.querySelector(".dropdown_menu");
 
   // Remove 'open' class initially
-  dropdownMenu.classList.remove('open');
+  dropdownMenu.classList.remove("open");
 
-  toggleBtn.addEventListener('click', function () {
-      dropdownMenu.classList.toggle('open');
+  toggleBtn.addEventListener("click", function () {
+    dropdownMenu.classList.toggle("open");
   });
 });
-
-
 
 function validateForm() {
   var usernameInput = document.getElementById("a_email");
@@ -33,10 +30,8 @@ function validateForm() {
 }
 
 function openAdminLogin() {
-    window.open('./admin_login.html', '_blank'); // '_blank' opens the link in a new tab
-  }
-
-
+  window.open("./admin_login.html", "_blank"); // '_blank' opens the link in a new tab
+}
 
 function subscribe() {
   // Add your backend integration logic here (e.g., store email in database)
@@ -44,12 +39,10 @@ function subscribe() {
   return false; // Prevent form submission for this example
 }
 
-
-
 // text animation css
 const elts = {
   text1: document.getElementById("text1"),
-  text2: document.getElementById("text2")
+  text2: document.getElementById("text2"),
 };
 
 const texts = [
@@ -61,7 +54,7 @@ const texts = [
   "Give",
   "a Love",
   ":)",
-  "Global Health Tracker"
+  "Global Health Tracker",
 ];
 
 const morphTime = 1;
@@ -82,8 +75,8 @@ function doMorph() {
   let fraction = morph / morphTime;
 
   if (fraction > 1) {
-      cooldown = cooldownTime;
-      fraction = 1;
+    cooldown = cooldownTime;
+    fraction = 1;
   }
 
   setMorph(fraction);
@@ -100,7 +93,6 @@ function setMorph(fraction) {
   elts.text1.textContent = texts[textIndex % texts.length];
   elts.text2.textContent = texts[(textIndex + 1) % texts.length];
 }
-
 
 function doCooldown() {
   morph = 0;
@@ -123,54 +115,44 @@ function animate() {
   cooldown -= dt;
 
   if (cooldown <= 0) {
-      if (shouldIncrementIndex) {
-          textIndex++;
-      }
+    if (shouldIncrementIndex) {
+      textIndex++;
+    }
 
-      doMorph();
+    doMorph();
   } else {
-      doCooldown();
+    doCooldown();
   }
 }
 
 animate();
 
-
-
-
-function eventDetails()
-{
-  
+function eventDetails() {
   alert("Your Event Booked Successfully");
 }
 
-
 // for home page animation
-document.addEventListener('DOMContentLoaded', function() {
-  window.addEventListener('scroll', function() {
-      addInViewClass('.hero-section');
-      addInViewClass('.hero-section-1');
-      addInViewClass('.hero-section-2');
-      addInViewClass('.hero-section-3');
-      addInViewClass('.news-letters-section');
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    addInViewClass(".hero-section");
+    addInViewClass(".hero-section-1");
+    addInViewClass(".hero-section-2");
+    addInViewClass(".hero-section-3");
+    addInViewClass(".news-letters-section");
   });
 });
 
 function addInViewClass(selector) {
   var elements = document.querySelectorAll(selector);
 
-  elements.forEach(function(element) {
-      var position = element.getBoundingClientRect();
+  elements.forEach(function (element) {
+    var position = element.getBoundingClientRect();
 
-      // Adjust the "100" based on when you want the animation to start
-      if (position.top < window.innerHeight - 100 && position.bottom >= 0) {
-          element.classList.add('in-view');
-      } else {
-          element.classList.remove('in-view');
-      }
+    // Adjust the "100" based on when you want the animation to start
+    if (position.top < window.innerHeight - 70 && position.bottom >= 50) {
+      element.classList.add("in-view");
+    } else {
+      element.classList.remove("in-view");
+    }
   });
 }
-
-
-
-
